@@ -1,7 +1,6 @@
 //Le but de ce programme est de saisir Un tableau de 5<=N<=20 chaines de caractere ,puis extraiter les lettres de chaque case et les afficher.
 
 #include<stdio.h>
-#include<stdlib.h>
 #include <string.h>
 #include <ctype.h>
 int main() {
