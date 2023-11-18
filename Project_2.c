@@ -1,7 +1,6 @@
 // Le but de ce programme C est de saisir Un tableau de 5<=N<=20 chaines de caractere ,d'extraiter les enteiers contenant dans chaque chaine et les sommer//
 
 #include<stdio.h>
-#include<stdlib.h>
 void main() {
     char T[20][10];
     char ST[10];          //ST sera le nom du variable contenant les numéros dans une Chaine T[i]
