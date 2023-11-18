@@ -2,14 +2,16 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-void main(){
+int main(){
     char *T;
     int N;
     printf("Donner la taille de votre chaine: ");
     scanf("%d", &N);
     T=(char *)malloc((N + 1) * sizeof(char));
-    if(T==NULL){printf("erreur");}
-    else{free(T);}
+    if(T==NULL){
+        printf("error");
+        return 0;
+    }
     printf("Donner votre chaine: \n");
     fflush(stdin);
     gets(T);
