@@ -39,7 +39,7 @@ int main() {
                 test = false;
             }
         }
-    } while (test);
+    } while (!test);
     //pour faciliter le calcul on fait convertir la chaine en majuscule
     strupr(ch);
     //création et verification de Num_Occ
