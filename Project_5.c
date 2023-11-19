@@ -40,6 +40,8 @@ int main() {
             }
         }
     } while (test);
+    //pour faciliter le calcul on fait convertir la chaine en majuscule
+    strupr(ch);
     //création et verification de Num_Occ
     Nomb_occ = (struct No *)malloc(26* sizeof(struct No));
     if (Nomb_occ == NULL) {
@@ -49,7 +51,7 @@ int main() {
     }
     //initialiastion du Nomb occ
     for (int i = 0; i < 26; i++) {
-        Nomb_occ[i].c = 'a' + i;
+        Nomb_occ[i].c = 'A' + i;
         Nomb_occ[i].Occ = 0;
     }
     for (int i = 0; i < 26; i++) {
