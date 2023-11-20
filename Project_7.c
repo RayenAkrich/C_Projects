@@ -14,6 +14,7 @@ int main(){
     printf("Donner votre 1er chaine");
     fflush(stdin);
     gets(ch1);
+    fflush(stdout);
     printf("Donner la taille de votre 2eme chaine: ");
     scanf("%d",&n2);
     ch2=(char*) malloc((n2+1)* sizeof(char));
