@@ -26,6 +26,7 @@ int main(){
     printf("Donner votre 2eme chaine");
     fflush(stdin);
     gets(ch2);
+    fflush(stdout);
     ch3=(char*)malloc((n1+n2+1)* sizeof(char));
     if(ch3==NULL){
         printf("erreur de location");
