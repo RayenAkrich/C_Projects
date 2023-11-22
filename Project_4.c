@@ -26,4 +26,5 @@ int main(){
     }
     T[N]='\0';
     printf("votre chaine sans répétition est :\n %s",T);
+    free(T);
 }
