@@ -42,4 +42,5 @@ int main(){
     for(int j=0;j<n;j++){
         printf("%d | ",T[j]);
     }
+    free(T);
 }
