@@ -9,12 +9,13 @@ int main(){
     scanf("%d", &N);
     T=(char *)malloc((N + 1) * sizeof(char));
     if(T==NULL){
-        printf("error");
+        printf("Error");
         return 0;
     }
     printf("Donner votre chaine: \n");
     fflush(stdin);
     gets(T);
+    fflush(stdout);
     for (int i=0;i<=N-2;i++){
         if (T[i]==T[i+1]){
             for (int j=i;j<=N-1;j++){
@@ -25,6 +26,6 @@ int main(){
         }
     }
     T[N]='\0';
-    printf("votre chaine sans répétition est :\n %s",T);
+    printf("Votre chaine sans répétition est :\n %s",T);
     free(T);
 }
