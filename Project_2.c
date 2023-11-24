@@ -16,7 +16,7 @@ void main() {
     for (int i = 0; i < N; i++) {
         ST[0] = '\0';
         printf("Saisir la %d ème case : ", 1+i);
-        scanf("%s", T[i]);
+        fflush(stdin);gets(T[i]);fflush(stdout);
         for (int j = 0; T[i][j] != '\0'; j++) {
             if (isdigit(T[i][j])) {
                 strncat(ST, &T[i][j], 1);
