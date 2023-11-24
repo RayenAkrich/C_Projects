@@ -41,7 +41,7 @@ int main() {
     }
     
     char resultat[4000] = "";
-    strcpy(resultat, consonnesMajuscules);
+    strcat(resultat, consonnesMajuscules);
     strcat(resultat, voyellesMajuscules);
     strcat(resultat, consonnesMinuscules);
     strcat(resultat, voyellesMinuscules);
