@@ -20,6 +20,6 @@ int main() {
                 strncat(ST, &T[i][j], 1);
             }
         }
-        printf("%d %s \n",i+1,ST);
+        printf("%d | %s \n",i+1,ST);
     }
 }
