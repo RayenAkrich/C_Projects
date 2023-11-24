@@ -31,7 +31,7 @@ int main(){
     do{
         printf("Saisir le nombre de caractères de la 2eme chaine pour les concatener");
         scanf("%d",&n);
-    }while(n>n2);
+    }while(n> strlen(ch2));
     ch3=(char*)malloc((n1+n+1)* sizeof(char));
     if(ch3==NULL){
         printf("erreur de location");
