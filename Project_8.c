@@ -1,3 +1,6 @@
+//Le but de ce programme estp ermettant de saisir une chaine de caractères CH non vide, de supprimer tous les caractères autres que les alphabétiques, de construire une chaine RES dans laquelle on rangera toutes les consonne de CH qui sont en majuscule,
+// suivies de toutes les voyelles de CH qui sont en majuscule, suivies de toutes les consonne de CH qui sont en minuscule, suivies de toutes les voyelles de CH qui sont en minuscule en conservant dans RES l’ordre d’apparition des lettres dans CH.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
