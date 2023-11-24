@@ -14,7 +14,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         ST[0] = '\0';
         printf("Saisir la %d ème case : ", i+1);
-        gets(T[i]);fflush(stdout);
+        fflush(stdin);gets(T[i]);fflush(stdout);
         for (int j = 0; T[i][j] != '\0'; j++) {
             if (isalpha(T[i][j])) {
                 strncat(ST, &T[i][j], 1);
