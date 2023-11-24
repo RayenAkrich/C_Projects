@@ -33,13 +33,13 @@ int main() {
     //saisir la chaine
     do {
         printf("Saisir votre chaine :\n");
-        gets(ch);
+        fflush(stdin);gets(ch);fflush(stdout);
         for (int i = 0; (test) && (i < strlen(ch)); i++) {
-            if ((ch[i] != ' ') || (!isalpha(ch[i]))) {
+            if ((ch[i] != ' ') || !(isalpha(ch[i]))) {
                 test = false;
             }
         }
-    } while (!test);
+    } while (test);
     //pour faciliter le calcul on fait convertir la chaine en majuscule
     strupr(ch);
     //création et verification de Num_Occ
