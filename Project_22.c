@@ -27,7 +27,7 @@ int main() {
         printf(" n'admet aucune solution.");
     }
     else if(D==0){//Solution double
-        x1=(-b)/2*a;
+        x1=(-b)/(2*a);
         printf(" admet une solution double x1=x2=%f",x1);
     }
     else{//2 Solutions
