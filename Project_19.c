@@ -2,22 +2,20 @@
 
 //Enoncé : 
 //On se propose d'écrire un programme qui assiste un utilisateur dans la composition d'un service
-//SMS. Chaque service est désigné par un code et doit respecter une forme bien particulière. On
-//suppose que l'on dispose de la fonction suivante:
+//SMS. Chaque service est désigné par un code et doit respecter une forme bien particulière.
+//On suppose que l'on dispose de la fonction suivante:
 //exec_service(char *sms, char *message_retour);
 //Les services gérés par le programme sont les suivants:
 //* Affichage du solde restant
 //Code: 100
 //forme du SMS: *100#
-//Pour ce service le programme doit envoyer à la fonction exec_service() la chaine de caractères de la
-//forme si dessus et afficher son message de retour
+//Pour ce service le programme doit envoyer à la fonction exec_service() la chaine de caractères de la forme si dessus et afficher son message de retour
 //* Demande d'appel
 //Code: 200
 //Donnée: Numéro de portable vers lequel la demande d'appel est envoyée
 //Forme du SMS: *200*numéro du portable#
-//Pour ce service, le programme doit contrôler la validité du numéro de portable. Le numéro de
-//portable doit être une chaine de caractères formée par des chiffres, de longueur égale à 8 et dont le
-//premier chiffre est 3.
+//Pour ce service, le programme doit contrôler la validité du numéro de portable. Le numéro de portable doit être une chaine de caractères formée par des chiffres,
+//de longueur égale à 8 et dont le premier chiffre est 3.
 //Si le numéro de portable est valide , le programme produit une chaine de caractères (sms) de la
 //forme précisée ci dessus, appelle la fonction exec_service() et affiche son message de retour.
 //Sinon il produit une chaine de caractères qui contient la nature de l'erreur et l'affiche.
@@ -27,12 +25,11 @@
 //. Numéro du portable vers lequel le crédit est transféré
 //. Montant du crédit à transférer
 //forme du SMS: *101*numéro de portable*montant du crédit#
-//Pour ce service, le programme doit contrôler la validité du numéro de portable et le montant du
-//crédit. . Le montant de crédit est exprimé en millimes, il doit correspondre à une chaine de
-//caractères formée par des chiffres, le montant doit etre &gt;= à 500 et inférieure à 5000.
+//Pour ce service, le programme doit contrôler la validité du numéro de portable et le montant du crédit.
+//Le montant de crédit est exprimé en millimes, il doit correspondre à une chaine de
+//caractères formée par des chiffres, le montant doit etre supérieure à 500 et inférieure à 5000.
 //Si le numéro de portable est valide et le montant du crédit est valide, le programme produit une
-//chaine de caractères (sms) de la forme précisée ci dessus, appelle la fonction exec_service() et
-//affiche son message de retour.
+//chaine de caractères (sms) de la forme précisée ci dessus, appelle la fonction exec_service() et affiche son message de retour.
 //Sinon il produit une chaine de caractères qui contient la nature de l'erreur et l'affiche.
 //* Forfait Internet
 //Code: 104
