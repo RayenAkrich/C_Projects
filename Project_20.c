@@ -1,4 +1,4 @@
-//Examen 2019 Partie A Enoncé :
+//Examen Janvier 2020 Partie A Enoncé :
 
 //On souhaite écrire un programme C pour conjuguer au présent un verbe du premier groupe régulier (se termine avec er).
 //Le programme devra afficher la conjugaison du verbe pour tous les pronoms personnels.
