@@ -1,4 +1,5 @@
 //Examen Janvier 2020 Partie C Enoncé :
+
 //Ecrire un programme C qui permet de résoudre une équation de second degrés ax2 +bx+c.
 //Le programme accepte les paramètres de l'équation a, b et c (des réels)
 //Il doit afficher le nombre de solutions et les solutions possibles.
