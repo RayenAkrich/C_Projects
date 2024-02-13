@@ -48,7 +48,7 @@ int main()
         }
 
         // Demande à l'utilisateur s'il veut ajouter une autre case
-        printf("Voulez-vous ajouter une autre case ? (1 pour oui, 0 pour non): ");
+        printf("Voulez vous ajouter une autre case ? (1 pour oui, 0 pour non): ");
         scanf("%d", &test);
     } while (test != 0);
 
