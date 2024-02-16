@@ -92,14 +92,14 @@ int main()
     while (p2 != NULL) {
         printf("Date: %s, Temperature: %f\n", p2->date, p2->temp);
         p2 = p2->next;
-    }
-
-    //Free
+    } 
+    
+    // Free de p
     while (p != NULL) {
-        //Free de p
-        T *temp = p;
-        p = p->next;
-        free(temp);
+        T *temp = p->next;
+        p->next=NULL;
+        free(p);
+        p=temp;
     }
 
     return 0;
