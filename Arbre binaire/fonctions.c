@@ -42,3 +42,21 @@ void liberer_arbre(Arbre* arbre) {
     //Libèration du noeud père
     free(arbre);
 }
+
+Arbre* recherche(Arbre* racine, int x) {
+    //Cas de base si l'arbre est vide ou la valeur est trouvée
+    if (racine == NULL || racine->a == x) {
+        return racine;
+    }
+
+    //Recherche dans la sous-arbre gauche
+    Arbre* resultat_gauche = recherche(racine->F_g, x);
+    
+    // Si on trouve l'élément dans la sous-arbre gauche, on la retourne
+    if (resultat_gauche != NULL) {
+        return resultat_gauche;
+    }
+
+    //Sinon, on recherche dans la sous-arbre droit
+    return recherche(racine->F_d, x);
+}
