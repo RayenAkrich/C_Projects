@@ -11,4 +11,6 @@ typedef struct Arbre_b Arbre;
 
 Arbre* create(int n); //n est le nombre de niveaux
 
+void liberer_arbre(Arbre* arbre); //Fonction pour la libèration de la mémoire
+
 #endif //UNTITLED_FONCTIONS_H
