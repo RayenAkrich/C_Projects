@@ -3,8 +3,8 @@
 
 //Type arbre binaire
 struct Arbre_b{
-    struct Arbre_b **F_d; //Fils droit
-    struct Arbre_b **F_g; //Fils gauche
+    struct Arbre_b *F_d; //Fils droit
+    struct Arbre_b *F_g; //Fils gauche
     int a; //Type de l'information est un entier 
 };
 typedef struct Arbre_b Arbre;
