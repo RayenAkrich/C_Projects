@@ -23,9 +23,22 @@ Arbre* create(int n) {
     printf("Saisir la valeur du sommet du père: ");
     scanf("%d",&nouveau->a);
     
-    // Crée les sous-arbres récursivement
+    //Création des sous-arbres récursivement
     nouveau->F_g = create(n - 1);
     nouveau->F_d = create(n - 1);
     
     return nouveau;
+}
+
+void liberer_arbre(Arbre* arbre) {
+    if (arbre == NULL) {
+        return;
+    }
+
+    //Libèration les sous-arbres 
+    liberer_arbre(arbre->F_g);
+    liberer_arbre(arbre->F_d);
+
+    //Libèration du noeud père
+    free(arbre);
 }
