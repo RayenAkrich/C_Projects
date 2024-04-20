@@ -13,4 +13,6 @@ Arbre* create(int n); //n est le nombre de niveaux
 
 void liberer_arbre(Arbre* arbre); //Fonction pour la libèration de la mémoire
 
+Arbre* recherche(Arbre* racine, int x) ; //Fonction de recherche d'un élément x dans une arbre
+
 #endif //UNTITLED_FONCTIONS_H
