@@ -30,19 +30,6 @@ Arbre* create(int n) {
     return nouveau;
 }
 
-void liberer_arbre(Arbre* arbre) {
-    if (arbre == NULL) {
-        return;
-    }
-
-    //Libèration les sous-arbres 
-    liberer_arbre(arbre->F_g);
-    liberer_arbre(arbre->F_d);
-
-    //Libèration du noeud père
-    free(arbre);
-}
-
 Arbre* recherche(Arbre* racine, int x) {
     //Cas de base si l'arbre est vide ou la valeur est trouvée
     if (racine == NULL || racine->a == x) {
@@ -59,4 +46,17 @@ Arbre* recherche(Arbre* racine, int x) {
 
     //Sinon, on recherche dans la sous-arbre droit
     return recherche(racine->F_d, x);
+}
+
+void liberer_arbre(Arbre* arbre) {
+    if (arbre == NULL) {
+        return;
+    }
+
+    //Libèration les sous-arbres 
+    liberer_arbre(arbre->F_g);
+    liberer_arbre(arbre->F_d);
+
+    //Libèration du noeud père
+    free(arbre);
 }
